@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login-screen1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Mono:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+
+    <style>
+      @font-face {
+        :font-family: "Graphik";
+        src: url("Graphik-Font-Family.zip");
+        font-weight: 400;
+      }
+      @font-face {
+        :font-family: "Verdana";
+        src: url("Verdana-Font.zip");
+        font-weight: 400;
+      }
+      @font-face {
+        :font-family: "Verdana";
+        src: url("Verdana-Font.zip");
+        font-weight: 700;
+      }
+      @font-face {
+        :font-family: "Georgia";
+        src: url("Georgia-Font.zip");
+        font-weight: 400;
+      }
+      @font-face {
+        :font-family: "Georgia";
+        src: url("Georgia-Font.zip");
+        font-weight: 700;
+      }
+      @font-face {
+        :font-family: "Calibri";
+        src: url("Calibri-Font (1).zip");
+        font-weight: 400;
+      }
+      @font-face {
+        :font-family: "Calibri";
+        src: url("Calibri-Font.zip");
+        font-weight: 700;
+      }
+      @font-face {
+        :font-family: "Tahoma";
+        src: url("Tahoma-Font.zip");
+        font-weight: 400;
+      }
+      @font-face {
+        :font-family: "Tahoma";
+        src: url("tahomabd.ttf");
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-screen1">
+      <nav class="navbar32">
+        <div class="group-parent17">
+          <img class="frame-child124" alt="" src="./public/group-84.svg" />
+
+          <div class="savestash35">
+            <span class="save35">save</span>
+            <span class="stash35">stash</span>
+          </div>
+        </div>
+      </nav>
+      <section class="login-box1">
+        <div class="login1">
+          <b class="welcome-back1">Welcome Back! </b>
+          <div class="text-field4">
+            <div class="text-field5">
+              <div class="state-layer8">
+                <div class="leading-icon2">
+                  <div class="container4">
+                    <div class="state-layer9">
+                      <img class="icon4" alt="" src="./public/icon21.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="input-text4">
+                    <div class="input-text5">Email</div>
+                  </div>
+                  <div class="label-text6">
+                    <div class="label-text7">Email</div>
+                  </div>
+                </div>
+                <div class="trailing-icon2">
+                  <div class="container4">
+                    <div class="state-layer9">
+                      <img class="icon4" alt="" src="./public/icon1.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-field4">
+            <div class="text-field5">
+              <div class="state-layer8">
+                <div class="leading-icon2">
+                  <div class="container4">
+                    <div class="state-layer9">
+                      <img class="icon4" alt="" src="./public/icon3.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="input-text4">
+                    <div class="input-text5">Password</div>
+                  </div>
+                  <div class="label-text6">
+                    <div class="label-text7">Password</div>
+                  </div>
+                </div>
+                <div class="leading-icon2">
+                  <div class="container4">
+                    <div class="state-layer9">
+                      <img class="icon4" alt="" src="./public/icon1.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button2">
+            <div class="state-layer14">
+              <div class="label-text10">SIGN IN</div>
+            </div>
+          </button>
+          <div class="subtext1" id="subtext">Login using student ID</div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var subtext = document.getElementById("subtext");
+      if (subtext) {
+        subtext.addEventListener("click", function (e) {
+          window.location.href = "./login-screen.html";
+        });
+      }
+      </script>
+  </body>
+</html>

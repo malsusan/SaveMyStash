@@ -1,0 +1,121 @@
+.delete1,
+.iconclose {
+  position: relative;
+  flex-shrink: 0;
+}
+.delete1 {
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  width: 314px;
+}
+.iconclose {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.delete-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.are-you-sure {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-16-size);
+  line-height: 150%;
+  color: var(--gray-3);
+}
+.frame-group {
+  gap: var(--gap-base);
+}
+.frame-group,
+.frame-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.continue {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.buttonprimarylargedefault,
+.buttonsecondarylargedefault {
+  border-radius: var(--br-5xs);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  align-items: center;
+}
+.buttonsecondarylargedefault {
+  background-color: var(--m3-sys-light-on-primary);
+  border: 1px solid var(--red);
+  box-sizing: border-box;
+  width: 105px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.buttonprimarylargedefault {
+  background-color: var(--purple-100);
+  border: 1px solid var(--purple-100);
+  color: var(--m3-sys-light-on-primary);
+}
+.buttonprimarylargedefault,
+.buttons,
+.delete,
+.frame-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+.buttons {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-4xs);
+  text-align: center;
+  font-size: var(--body-16-size);
+  color: var(--red);
+  font-family: var(--font-poppins);
+}
+.delete,
+.frame-parent {
+  flex-direction: column;
+}
+.frame-parent {
+  align-self: stretch;
+  padding: 0 var(--padding-5xl);
+  align-items: flex-end;
+  gap: var(--gap-45xl);
+}
+.delete {
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--m3-sys-light-on-primary);
+  width: 420px;
+  padding: var(--padding-5xl) 0;
+  box-sizing: border-box;
+  align-items: center;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--h1-24-size);
+  color: var(--gray-1);
+  font-family: var(--body-16);
+}
+@media screen and (max-width: 960px) {
+  .delete {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .delete {
+    display: none;
+  }
+}

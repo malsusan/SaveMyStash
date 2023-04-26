@@ -1,0 +1,131 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+.splash-screen-child {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1080px;
+}
+.logo-3-child {
+  position: relative;
+  width: 82.43px;
+  height: 82.4px;
+  flex-shrink: 0;
+}
+.save {
+  font-weight: 500;
+}
+.stash {
+  font-weight: 600;
+  color: var(--purple-100);
+}
+.savestash {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  display: inline-block;
+  width: 421.06px;
+}
+.logo-3 {
+  width: 421.06px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17.67px;
+}
+.your-bookmarks-elevated {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--h1-24-size);
+  color: var(--gray-6);
+  display: inline-block;
+  height: 107px;
+  flex-shrink: 0;
+}
+.label-text {
+  position: relative;
+  font-size: var(--h3-18-size);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--body-16);
+  color: var(--m3-sys-light-on-primary);
+  text-align: center;
+}
+.state-layer {
+  flex: 1;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-5xl);
+}
+.button,
+.logo-3-parent,
+.splash-screen-inner,
+.state-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--purple-100);
+  border-radius: var(--br-81xl);
+  width: 342px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.button:hover {
+  animation: 1s ease 0s infinite normal none shadow-drop-bottom;
+  opacity: 1;
+}
+.logo-3-parent,
+.splash-screen-inner {
+  align-self: stretch;
+  flex-direction: column;
+}
+.logo-3-parent {
+  gap: var(--gap-13xl);
+}
+.splash-screen-inner {
+  width: 960px;
+  flex-shrink: 0;
+  padding: 136px var(--padding-5xl) 336px;
+  box-sizing: border-box;
+}
+.splash-screen {
+  position: relative;
+  background-color: #161616;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 56px;
+  color: var(--m3-sys-light-on-primary);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .splash-screen {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .splash-screen {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .splash-screen {
+    display: none;
+  }
+}
